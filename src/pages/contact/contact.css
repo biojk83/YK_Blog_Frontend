@@ -1,0 +1,80 @@
+.container {
+    width: 70%;
+    background-color: #fff;
+    margin: 25px auto 0px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.contactTitle {
+    margin-bottom: 20px;
+}
+.contactTitle > h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+.contactTitle > p {
+    font-size: 12px;
+}
+.leftContainer {
+    display: flex;
+    padding: 10px 0px;
+    align-items: center;
+   
+}
+.contactWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.contactWrapper > .left {
+    padding: 0 10px;
+    margin: 0 10px;
+}
+.contactWrapper > .right {
+    padding: 0 10px;
+    margin: 0 10px;
+    padding-top: 10px;
+    font-size: 16px;
+    width: 40%;
+}
+.icon {
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.formContainer {
+   
+    padding: 10px 0px;
+    
+}
+.formContainer label {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+.formContainer input {
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(155, 155, 155);
+    width: 100%;
+    padding: 0 0 3px 12px;
+}
+.formContainer .title {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+}
+.formContainer textarea {
+    margin-top: 5px;   
+    height: 250px;
+    padding: 12px 0 0 12px;
+}
+button[type='submit'] {
+    
+    outline: none;
+    padding: 0.3rem 1.5rem;
+    cursor: pointer;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+

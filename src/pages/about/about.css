@@ -1,0 +1,32 @@
+#about {
+    margin-top: 50px;
+}
+.columnContainer {
+    width: 96%;
+    display: flex;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+.leftColumn {
+    flex: 3;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: center;
+}
+.rightColumn {
+    flex: 9;
+}
+.profile-pic {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+}
+#about h2 {
+    color: #000;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+#about p {
+    line-height: 30px;
+    margin-bottom: 24px;
+}
