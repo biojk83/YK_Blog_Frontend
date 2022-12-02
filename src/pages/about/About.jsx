@@ -4,7 +4,7 @@ import "./about.css";
 
 export default function About() {
     
-    const PF = "https://yk-blog-frotend.onrender.com/images/"; 
+    const PF = "https://yk-blog-backend.onrender.com/images/"; 
     return (
         <>
         <section id="about">
