@@ -31,8 +31,8 @@ function App() {
       <Route path="/write" element={user ? <Write /> : <Login />} />
       <Route path="/settings" element={user ? <Setting /> : <Login />} />
       <Route path="/post/:postId" element={<Single />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route exact path="/about" element={<About />} />
+      <Route exact path="/contact" element={<Contact />} />
       </Routes>
     </Router>    
   );
