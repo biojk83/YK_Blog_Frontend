@@ -6,23 +6,27 @@ import { Context } from "../../context/Context"
 import axios from "axios";
 
 export default function Login() {
-    console.log("login");
+    
     const userRef = useRef();
     const passwordRef = useRef();
     const { dispatch, isFetching } = useContext(Context);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        console.log("login start");
         dispatch({ type: "LOGIN_START"});
         try{
+            console.log("login axios");
             const res = await axios.post("/auth/login", {
                 username: userRef.current.value,
                 password: passwordRef.current.value
             })
             dispatch({type:"LOGIN_SUCCESS", payload:res.data})
+            console.log("login success");
         } catch(err) {
             
             dispatch({ type:"LOGIN_FAILURE",})
+            console.log("login fail");
         }
     };
 
