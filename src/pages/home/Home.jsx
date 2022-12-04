@@ -6,6 +6,7 @@ import Posts from '../../components/posts/Posts';
 import Sidebar from '../../components/sidebar/Sidebar';
 import './home.css'
 import { useLocation } from 'react-router-dom';
+import { axiosInstance } from "../../../config";
 
 export default function Home() {
     //from the home page you have to bring posts info from the server by using Axios
@@ -14,7 +15,7 @@ export default function Home() {
     
     useEffect(()=>{
         const fetchPosts = async ()=>{
-        const res = await axios.get("/posts" + search)
+        const res = await axiosInstance.get("/posts" + search)
         setPosts(res.data)
     }
     fetchPosts()
