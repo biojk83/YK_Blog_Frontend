@@ -6,7 +6,7 @@ import { Context } from "../../context/Context";
 
 function NavBar () {
   const { user, dispatch } = useContext(Context);
-  const PF = "http://localhost:5000/images/";
+  const PF = "https://yk-blog-backend.onrender.com/images/";
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT"})

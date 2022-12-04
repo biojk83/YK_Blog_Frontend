@@ -10,6 +10,7 @@ import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
 import {
   BrowserRouter as Router,
+  HashRouter,
   Routes, //instead of swtich
   Route,
   Link
@@ -22,7 +23,7 @@ function App() {
  const { user } = useContext(Context);
 
   return (
-    <Router>
+    <HashRouter>
       <NavBar />
       <Routes>
       <Route exact path="/" element={<Home />} />
@@ -31,10 +32,10 @@ function App() {
       <Route path="/write" element={user ? <Write /> : <Login />} />
       <Route path="/settings" element={user ? <Setting /> : <Login />} />
       <Route path="/post/:postId" element={<Single />} />
-      <Route exact path="/about" element={<About />} />
-      <Route exact path="/contact" element={<Contact />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
       </Routes>
-    </Router>    
+    </HashRouter>    
   );
 }
 
