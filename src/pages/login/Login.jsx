@@ -3,7 +3,7 @@ import './login.css'
 import { Link } from "react-router-dom"
 import { useContext, useRef } from "react";
 import { Context } from "../../context/Context"
-import { axiosInstance } from "../../../config";
+import { axiosInstance } from "../../config";
 import axios from "axios";
 
 export default function Login() {
