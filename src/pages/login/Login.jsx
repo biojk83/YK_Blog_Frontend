@@ -17,7 +17,7 @@ export default function Login() {
         dispatch({ type: "LOGIN_START"});
         try{
             console.log("login axios");
-            const res = await axios.post("https://yk-blog-backend.onrender.com/api/auth/login", {
+            const res = await axios.post("auth/login", {
                 username: userRef.current.value,
                 password: passwordRef.current.value
             })
